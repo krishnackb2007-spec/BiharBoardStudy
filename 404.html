@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BiharBoardStudy</title>
+
+  <script>
+    (function () {
+      var l = window.location;
+      var repo = "/BiharBoardStudy/";
+
+      if (l.pathname.startsWith(repo)) {
+        var route = l.pathname.slice(repo.length);
+
+        var redirect =
+          l.origin +
+          repo +
+          "?/" +
+          route +
+          (l.search ? "&" + l.search.slice(1) : "") +
+          l.hash;
+
+        window.location.replace(
+          redirect.replace(/&/g, "~and~")
+        );
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <p>Loading BiharBoardStudy...</p>
+</body>
+</html>
