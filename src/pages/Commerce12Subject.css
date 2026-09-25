@@ -1,0 +1,402 @@
+.commerce12-subject-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding-bottom: 70px;
+}
+
+/* HEADER */
+
+.commerce12-subject-header {
+  background: linear-gradient(
+    135deg,
+    #064e3b,
+    #047857,
+    #10b981
+  );
+  color: white;
+  text-align: center;
+  padding: 35px 20px 65px;
+  position: relative;
+  overflow: hidden;
+}
+
+.commerce12-subject-back {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.commerce12-subject-back:hover {
+  background: white;
+  color: #047857;
+}
+
+.commerce12-subject-badge {
+  display: inline-block;
+  margin-top: 45px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.commerce12-subject-big-icon {
+  width: 80px;
+  height: 80px;
+  margin: 22px auto 15px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.commerce12-subject-header h1 {
+  margin: 0;
+  font-size: clamp(36px, 6vw, 55px);
+}
+
+.commerce12-subject-header h2 {
+  margin: 5px 0 12px;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+.commerce12-subject-header p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* RESOURCE SECTION */
+
+.commerce12-resource-section {
+  max-width: 1150px;
+  margin: -35px auto 0;
+  padding: 0 20px;
+  position: relative;
+}
+
+.commerce12-resource-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.commerce12-resource-heading span {
+  font-size: 12px;
+  font-weight: 800;
+  color: #059669;
+  letter-spacing: 1px;
+}
+
+.commerce12-resource-heading h2 {
+  margin: 8px 0;
+  font-size: 32px;
+  color: #0f172a;
+}
+
+.commerce12-resource-heading p {
+  color: #64748b;
+}
+
+/* RESOURCE CARDS */
+
+.commerce12-resource-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.commerce12-resource-card {
+  min-height: 190px;
+  border-radius: 22px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid;
+  transition: 0.3s;
+}
+
+.commerce12-resource-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* COLORS */
+
+.commerce12-resource-card.pyq {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.commerce12-resource-card.model {
+  background: #faf5ff;
+  border-color: #e9d5ff;
+}
+
+.commerce12-resource-card.objective {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.commerce12-resource-card.subjective {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+/* ICON */
+
+.commerce12-resource-icon {
+  min-width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.pyq .commerce12-resource-icon {
+  background: #dbeafe;
+}
+
+.model .commerce12-resource-icon {
+  background: #f3e8ff;
+}
+
+.objective .commerce12-resource-icon {
+  background: #ffedd5;
+}
+
+.subjective .commerce12-resource-icon {
+  background: #d1fae5;
+}
+
+.commerce12-resource-content {
+  flex: 1;
+}
+
+.commerce12-resource-content span {
+  font-size: 11px;
+  font-weight: 800;
+  color: #64748b;
+}
+
+.commerce12-resource-content h3 {
+  margin: 5px 0;
+  color: #0f172a;
+  font-size: 22px;
+}
+
+.commerce12-resource-content p {
+  margin: 0;
+  color: #64748b;
+}
+
+/* BUTTON */
+
+.commerce12-resource-card button {
+  border: none;
+  background: #0f172a;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* TIP */
+
+.commerce12-subject-tip {
+  max-width: 1000px;
+  margin: 50px auto 0;
+  padding: 25px;
+  display: flex;
+  gap: 18px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 18px;
+}
+
+.commerce12-tip-icon {
+  font-size: 28px;
+}
+
+.commerce12-subject-tip h3 {
+  margin: 0 0 7px;
+  color: #065f46;
+}
+
+.commerce12-subject-tip p {
+  margin: 0;
+  color: #047857;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .commerce12-resource-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .commerce12-subject-header {
+    padding: 25px 15px 50px;
+  }
+
+  .commerce12-subject-back {
+    top: 15px;
+    left: 15px;
+  }
+
+  .commerce12-subject-badge {
+    margin-top: 55px;
+  }
+
+  .commerce12-subject-header h1 {
+    font-size: 38px;
+  }
+
+  .commerce12-resource-section {
+    padding: 0 15px;
+  }
+
+  .commerce12-resource-card {
+    padding: 22px;
+    align-items: flex-start;
+  }
+
+  .commerce12-resource-card button {
+    display: none;
+  }
+
+  .commerce12-subject-tip {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+/* ================================
+   COMMERCE SUBJECT CARD FIX
+================================ */
+
+/* English name - BIG */
+.commerce12-subject-content h3 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 8px 0 2px;
+  color: #0f172a;
+}
+
+/* Hindi name - SMALL below English */
+.commerce12-subject-content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: #475569;
+}
+
+/* Description spacing */
+.commerce12-subject-content p {
+  margin: 0 0 65px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Explore button fixed at bottom */
+.commerce12-subject-button {
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  z-index: 10;
+
+  background: #0f172a;
+  color: white;
+
+  padding: 11px 18px;
+  border: none;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Button hover */
+.commerce12-subject-button:hover {
+  transform: translateX(4px);
+  background: #1e293b;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .commerce12-subject-content h3 {
+    font-size: 25px;
+  }
+
+  .commerce12-subject-content h4 {
+    font-size: 16px;
+  }
+
+  .commerce12-subject-content p {
+    margin-bottom: 70px;
+  }
+}
+/* =========================================
+   FINAL COMMERCE SUBJECT HEADER
+========================================= */
+
+.commerce-subject-english {
+  font-size: 54px !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  margin: 0 0 5px !important;
+  color: #ffffff !important;
+}
+
+.commerce-subject-hindi {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  margin: 0 0 15px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.commerce-subject-description {
+  max-width: 700px;
+  margin: 0 auto !important;
+  line-height: 1.7 !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .commerce-subject-english {
+    font-size: 38px !important;
+  }
+
+  .commerce-subject-hindi {
+    font-size: 17px !important;
+  }
+
+}

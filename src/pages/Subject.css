@@ -1,0 +1,666 @@
+/* ==================================================
+   SUBJECT PAGE
+================================================== */
+
+.subject-page {
+  min-height: 100vh;
+  background: #f7fbff;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.subject-hero {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 70px 30px 80px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* HERO CONTENT */
+
+.subject-hero-content {
+  position: relative;
+}
+
+.back-button {
+  border: none;
+  background: transparent;
+
+  color: #1769d1;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  margin-bottom: 30px;
+
+  transition: 0.25s ease;
+}
+
+.back-button:hover {
+  transform: translateX(-5px);
+}
+
+
+.subject-icon-large {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf4ff;
+
+  border: 1px solid #d3e7fb;
+
+  border-radius: 20px;
+
+  font-size: 36px;
+
+  margin-bottom: 20px;
+}
+
+
+.subject-badge {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  background: #e8f3ff;
+
+  color: #1769d1;
+
+  border-radius: 50px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+.subject-hero-content h1 {
+  margin: 18px 0;
+
+  color: #14213d;
+
+  font-size: 50px;
+
+  line-height: 1.1;
+}
+
+.subject-hero-content h1 span {
+  display: block;
+
+  color: #1769d1;
+}
+
+
+.subject-hero-content p {
+  max-width: 610px;
+
+  color: #667991;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* ==================================================
+   HERO CARD
+================================================== */
+
+.subject-hero-card {
+  min-height: 390px;
+
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: linear-gradient(
+    145deg,
+    #1769d1,
+    #0b4fa8
+  );
+
+  border-radius: 30px;
+
+  color: white;
+
+  box-shadow:
+    0 25px 60px rgba(23, 105, 209, 0.25);
+
+  transform: rotate(2deg);
+
+  transition: 0.35s ease;
+}
+
+.subject-hero-card:hover {
+  transform: rotate(0deg) translateY(-7px);
+}
+
+
+.hero-card-icon {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 25px;
+
+  font-size: 50px;
+
+  margin-bottom: 25px;
+}
+
+
+.subject-hero-card > span {
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  opacity: 0.8;
+}
+
+
+.subject-hero-card h2 {
+  margin: 10px 0 5px;
+
+  font-size: 32px;
+}
+
+
+.subject-hero-card p {
+  margin: 0;
+
+  font-size: 13px;
+
+  opacity: 0.8;
+}
+
+
+.hero-card-bottom {
+  margin-top: 30px;
+
+  padding: 12px 25px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border-radius: 50px;
+}
+
+.hero-card-bottom strong {
+  font-size: 22px;
+}
+
+.hero-card-bottom span {
+  font-size: 11px;
+
+  opacity: 0.85;
+}
+
+
+/* ==================================================
+   RESOURCES SECTION
+================================================== */
+
+.subject-resources {
+  padding: 90px 30px;
+
+  background: white;
+}
+
+
+.subject-section-heading {
+  max-width: 700px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+
+.subject-section-heading > span {
+  color: #1769d1;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+.subject-section-heading h2 {
+  margin: 12px 0;
+
+  color: #14213d;
+
+  font-size: 38px;
+}
+
+
+.subject-section-heading h2 strong {
+  color: #1769d1;
+}
+
+
+.subject-section-heading p {
+  color: #71839a;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ==================================================
+   RESOURCE GRID
+================================================== */
+
+.resource-card-grid {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+.resource-card {
+  position: relative;
+
+  padding: 28px 24px;
+
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+
+  border: 1px solid #dfebf7;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 25px rgba(30, 80, 130, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.resource-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #bcd9f5;
+
+  box-shadow:
+    0 20px 45px rgba(30, 90, 160, 0.13);
+}
+
+
+.resource-card:active {
+  transform: scale(0.98);
+}
+
+
+/* RESOURCE TOP */
+
+.resource-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+
+.resource-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #edf6ff;
+
+  border-radius: 15px;
+
+  font-size: 26px;
+}
+
+
+.resource-number {
+  color: #d9e9f9;
+
+  font-size: 38px;
+
+  font-weight: 900;
+
+  line-height: 1;
+}
+
+
+.resource-card h3 {
+  margin: 0;
+
+  color: #17263f;
+
+  font-size: 19px;
+}
+
+
+.resource-card h4 {
+  margin: 7px 0 12px;
+
+  color: #1769d1;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.resource-card p {
+  margin: 0;
+
+  color: #71839a;
+
+  font-size: 12px;
+
+  line-height: 1.65;
+
+  flex: 1;
+}
+
+
+.resource-card button {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 11px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #edf6ff;
+
+  color: #1769d1;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+
+.resource-card:hover button {
+  background: #1769d1;
+
+  color: white;
+}
+
+
+/* ==================================================
+   PREPARATION SECTION
+================================================== */
+
+.preparation-section {
+  padding: 70px 30px;
+
+  background: linear-gradient(
+    135deg,
+    #eaf4ff,
+    #f8fbff
+  );
+}
+
+
+.preparation-card {
+  max-width: 950px;
+
+  margin: auto;
+
+  padding: 30px 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  background: white;
+
+  border: 1px solid #dceaf7;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 15px 40px rgba(30, 90, 160, 0.08);
+}
+
+
+.preparation-icon {
+  width: 65px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff7df;
+
+  border-radius: 18px;
+
+  font-size: 30px;
+}
+
+
+.preparation-card span {
+  color: #1769d1;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+.preparation-card h2 {
+  margin: 7px 0;
+
+  color: #17263f;
+
+  font-size: 22px;
+}
+
+
+.preparation-card p {
+  margin: 0;
+
+  color: #71839a;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1000px) {
+
+  .subject-hero {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+
+    gap: 45px;
+  }
+
+  .subject-hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subject-icon-large {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subject-hero-card {
+    max-width: 500px;
+
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .resource-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+  .subject-hero {
+    padding: 50px 18px 60px;
+  }
+
+  .subject-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .subject-hero-content p {
+    font-size: 14px;
+  }
+
+  .subject-hero-card {
+    min-height: 330px;
+
+    padding: 30px;
+
+    border-radius: 24px;
+  }
+
+  .hero-card-icon {
+    width: 80px;
+    height: 80px;
+
+    font-size: 40px;
+  }
+
+  .subject-hero-card h2 {
+    font-size: 27px;
+  }
+
+  .subject-resources {
+    padding: 65px 18px;
+  }
+
+  .subject-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .resource-card-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .resource-card {
+    min-height: 270px;
+  }
+
+  .preparation-section {
+    padding: 50px 18px;
+  }
+
+  .preparation-card {
+    padding: 25px;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+}
+/* ==================================================
+   HIDE SUBJECT HERO SECTION
+================================================== */
+
+.subject-page > .subject-hero {
+  display: none !important;
+}
+
+
+/* STUDY MATERIAL KO TOP PAR LAO */
+
+.subject-page .subject-resources {
+  padding-top: 55px;
+}

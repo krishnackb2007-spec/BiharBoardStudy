@@ -1,0 +1,401 @@
+/* ================= MAIN ================= */
+
+.arts12-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  padding-bottom: 70px;
+}
+
+
+/* ================= HEADER ================= */
+
+.arts12-header {
+  text-align: center;
+  padding: 45px 20px 60px;
+
+  background: linear-gradient(
+    135deg,
+    #fff7ed,
+    #fffaf5
+  );
+
+  border-bottom: 1px solid #f1e7dc;
+}
+
+.arts12-back {
+  border: none;
+
+  background: white;
+
+  padding: 11px 18px;
+
+  border-radius: 12px;
+
+  color: #ea580c;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.06);
+
+  margin-bottom: 24px;
+
+  transition: 0.25s ease;
+}
+
+.arts12-back:hover {
+  transform: translateX(-4px);
+}
+
+.arts12-badge {
+  display: inline-flex;
+
+  padding: 8px 16px;
+
+  border-radius: 30px;
+
+  background: #ffedd5;
+
+  color: #ea580c;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+
+  margin-bottom: 18px;
+}
+
+.arts12-header h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: clamp(32px, 5vw, 55px);
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.arts12-header h1 span {
+  color: #ea580c;
+}
+
+.arts12-header p {
+  max-width: 700px;
+
+  margin: 14px auto 0;
+
+  color: #64748b;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* ================= SUBJECT SECTION ================= */
+
+.arts12-subject-section {
+  max-width: 1150px;
+
+  margin: 55px auto 0;
+
+  padding: 0 20px;
+}
+
+.arts12-section-heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.arts12-section-heading span {
+  color: #ea580c;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.arts12-section-heading h2 {
+  margin: 8px 0;
+
+  color: #111827;
+
+  font-size: 30px;
+}
+
+.arts12-section-heading p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+
+/* ================= SUBJECT GRID ================= */
+
+.arts12-subject-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+
+/* ================= CARD ================= */
+
+.arts12-subject-card {
+  position: relative;
+
+  min-height: 220px;
+
+  padding: 27px;
+
+  border-radius: 22px;
+
+  border: 1px solid;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.arts12-subject-card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* ================= ICON ================= */
+
+.arts12-subject-icon {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 17px;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  font-size: 30px;
+
+  margin-bottom: 25px;
+}
+
+
+/* ================= NUMBER ================= */
+
+.arts12-subject-number {
+  position: absolute;
+
+  right: 25px;
+  top: 20px;
+
+  font-size: 55px;
+
+  font-weight: 900;
+
+  opacity: 0.08;
+}
+
+
+/* ================= TEXT ================= */
+
+.arts12-subject-card h3 {
+  margin: 0;
+
+  font-size: 24px;
+
+  color: #111827;
+}
+
+.arts12-subject-card p {
+  margin: 8px 0 20px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.arts12-subject-card > span {
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+
+/* ================= COLORS ================= */
+
+.history {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.history .arts12-subject-icon {
+  background: #dbeafe;
+}
+
+.geography {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+.geography .arts12-subject-icon {
+  background: #d1fae5;
+}
+
+.political {
+  background: #f5f3ff;
+  border-color: #ddd6fe;
+}
+
+.political .arts12-subject-icon {
+  background: #ede9fe;
+}
+
+.economics {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.economics .arts12-subject-icon {
+  background: #ffedd5;
+}
+
+.sociology {
+  background: #fdf2f8;
+  border-color: #fbcfe8;
+}
+
+.sociology .arts12-subject-icon {
+  background: #fce7f3;
+}
+
+.psychology {
+  background: #ecfeff;
+  border-color: #a5f3fc;
+}
+
+.psychology .arts12-subject-icon {
+  background: #cffafe;
+}
+
+.philosophy {
+  background: #fefce8;
+  border-color: #fde68a;
+}
+
+.philosophy .arts12-subject-icon {
+  background: #fef3c7;
+}
+
+.home-science {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.home-science .arts12-subject-icon {
+  background: #dcfce7;
+}
+
+
+/* ================= INFO ================= */
+
+.arts12-info {
+  max-width: 1060px;
+
+  margin: 55px auto 0;
+
+  padding: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  background: white;
+
+  border: 1px solid #e5eaf1;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.arts12-info-icon {
+  width: 52px;
+  height: 52px;
+
+  min-width: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff7ed;
+
+  border-radius: 14px;
+
+  font-size: 24px;
+}
+
+.arts12-info h3 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 17px;
+}
+
+.arts12-info p {
+  margin: 5px 0 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  .arts12-subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .arts12-header {
+    padding: 35px 18px 45px;
+  }
+
+  .arts12-info {
+    margin: 40px 20px 0;
+
+    align-items: flex-start;
+  }
+
+}

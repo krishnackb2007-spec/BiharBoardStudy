@@ -1,0 +1,376 @@
+/* ================= RESOURCE PAGE ================= */
+
+.resource-page {
+  min-height: 100vh;
+  background: #f7fbff;
+}
+
+
+/* ================= HERO ================= */
+
+.resource-hero {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 70px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.resource-hero-content {
+  max-width: 720px;
+}
+
+.resource-back {
+  border: none;
+  background: transparent;
+
+  color: #1769d1;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.resource-back:hover {
+  transform: translateX(-4px);
+}
+
+.resource-badge {
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  border-radius: 50px;
+
+  background: #e8f3ff;
+  color: #1769d1;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.resource-hero h1 {
+  margin: 18px 0;
+
+  color: #14213d;
+
+  font-size: 48px;
+}
+
+.resource-hero h1 span {
+  display: block;
+  color: #1769d1;
+}
+
+.resource-hero p {
+  color: #667991;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  max-width: 650px;
+}
+
+.resource-hero-icon {
+  width: 180px;
+  height: 180px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    145deg,
+    #1769d1,
+    #0b4fa8
+  );
+
+  border-radius: 35px;
+
+  font-size: 75px;
+
+  box-shadow:
+    0 25px 55px rgba(23, 105, 209, 0.25);
+
+  transform: rotate(4deg);
+}
+
+
+/* ================= CONTENT ================= */
+
+.resource-content {
+  padding: 80px 30px;
+
+  background: white;
+}
+
+.resource-heading {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.resource-heading span {
+  color: #1769d1;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.resource-heading h2 {
+  margin: 10px 0;
+
+  color: #14213d;
+
+  font-size: 35px;
+}
+
+.resource-heading p {
+  color: #71839a;
+
+  font-size: 13px;
+}
+
+
+/* ================= PDF LIST ================= */
+
+.resource-list {
+  max-width: 1050px;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.pdf-card {
+  padding: 20px 22px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  background: white;
+
+  border: 1px solid #deebf7;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 7px 22px rgba(30, 80, 130, 0.05);
+
+  transition: 0.3s ease;
+}
+
+.pdf-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #bcd8f5;
+
+  box-shadow:
+    0 15px 35px rgba(30, 90, 160, 0.11);
+}
+
+.pdf-icon {
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #edf6ff;
+
+  border-radius: 14px;
+
+  font-size: 25px;
+}
+
+.pdf-info {
+  flex: 1;
+}
+
+.pdf-info span {
+  color: #1769d1;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.pdf-info h3 {
+  margin: 5px 0;
+
+  color: #17263f;
+
+  font-size: 16px;
+}
+
+.pdf-info p {
+  margin: 0;
+
+  color: #71839a;
+
+  font-size: 11px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.pdf-actions {
+  display: flex;
+
+  gap: 8px;
+}
+
+.pdf-actions button {
+  padding: 10px 15px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #edf6ff;
+
+  color: #1769d1;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.pdf-actions button:hover {
+  background: #1769d1;
+
+  color: white;
+}
+
+.pdf-actions .download-btn {
+  background: #1769d1;
+
+  color: white;
+}
+
+.pdf-actions .download-btn:hover {
+  background: #0b4fa8;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  .resource-hero {
+    padding: 50px 18px;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .resource-hero h1 {
+    font-size: 37px;
+  }
+
+  .resource-hero p {
+    font-size: 14px;
+  }
+
+  .resource-hero-icon {
+    width: 140px;
+    height: 140px;
+
+    font-size: 60px;
+  }
+
+  .resource-content {
+    padding: 60px 18px;
+  }
+
+  .resource-heading h2 {
+    font-size: 29px;
+  }
+
+  .pdf-card {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    padding: 18px;
+  }
+
+  .pdf-info {
+    min-width: 0;
+  }
+
+  .pdf-actions {
+    width: 100%;
+
+    margin-left: 75px;
+  }
+
+  .pdf-actions button {
+    flex: 1;
+  }
+
+}
+/* ==================================================
+   HIDE RESOURCE HERO SECTION
+================================================== */
+
+.resource-page > .resource-hero {
+  display: none !important;
+}
+
+
+/* STUDY MATERIAL KO TOP PAR LAO */
+
+.resource-page .resource-content {
+  padding-top: 55px;
+}
+/* PDF ICON RED */
+
+.pdf-icon {
+  border-color: #ffd0d0 !important;
+}
+
+.pdf-icon::before {
+  color: #e53935 !important;
+}
+.creator-credit {
+  font-size: 20px !important;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.creator-credit strong {
+  font-size: 25px !important;
+  font-weight: 800;
+}

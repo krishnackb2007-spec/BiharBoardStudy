@@ -1,0 +1,423 @@
+.commerce12-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding-bottom: 70px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.commerce12-header {
+  background:
+    linear-gradient(135deg, #064e3b, #047857, #10b981);
+  color: white;
+  padding: 55px 20px 75px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.commerce12-header::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  top: -180px;
+  left: -100px;
+}
+
+.commerce12-header::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  right: -100px;
+  bottom: -160px;
+}
+
+.commerce12-back {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  padding: 11px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.commerce12-back:hover {
+  background: white;
+  color: #047857;
+}
+
+.commerce12-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 9px 18px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.commerce12-header h1 {
+  font-size: clamp(38px, 6vw, 64px);
+  margin: 0 0 15px;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.commerce12-header p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.7;
+  opacity: 0.92;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   SUBJECT SECTION
+========================= */
+
+.commerce12-subject-section {
+  max-width: 1200px;
+  margin: -35px auto 0;
+  padding: 0 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.commerce12-section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.commerce12-section-heading span {
+  color: #059669;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.commerce12-section-heading h2 {
+  font-size: 34px;
+  color: #0f172a;
+  margin: 8px 0;
+}
+
+.commerce12-section-heading p {
+  color: #64748b;
+  margin: 0;
+}
+
+/* =========================
+   SUBJECT GRID
+========================= */
+
+.commerce12-subject-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.commerce12-subject-card {
+  position: relative;
+  padding: 30px;
+  min-height: 300px;
+  border-radius: 24px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.07);
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.commerce12-subject-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.13);
+}
+
+.commerce12-subject-card::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  right: -40px;
+  top: -40px;
+  opacity: 0.12;
+}
+
+/* Accountancy */
+
+.commerce12-subject-card.accountancy {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.commerce12-subject-card.accountancy::before {
+  background: #2563eb;
+}
+
+.accountancy .commerce12-subject-icon {
+  background: #dbeafe;
+}
+
+/* Business */
+
+.commerce12-subject-card.business {
+  background: #faf5ff;
+  border-color: #e9d5ff;
+}
+
+.commerce12-subject-card.business::before {
+  background: #9333ea;
+}
+
+.business .commerce12-subject-icon {
+  background: #f3e8ff;
+}
+
+/* Economics */
+
+.commerce12-subject-card.economics {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+.commerce12-subject-card.economics::before {
+  background: #059669;
+}
+
+.economics .commerce12-subject-icon {
+  background: #d1fae5;
+}
+
+/* ICON */
+
+.commerce12-subject-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 31px;
+  margin-bottom: 22px;
+}
+
+.commerce12-subject-content {
+  position: relative;
+  z-index: 2;
+}
+
+.commerce12-subject-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #64748b;
+}
+
+.commerce12-subject-content h3 {
+  font-size: 27px;
+  margin: 9px 0 3px;
+  color: #0f172a;
+}
+
+.commerce12-subject-content h4 {
+  font-size: 17px;
+  margin: 0 0 12px;
+  color: #475569;
+  font-weight: 700;
+}
+
+.commerce12-subject-content p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.commerce12-subject-button {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  border: none;
+  background: #0f172a;
+  color: white;
+  padding: 11px 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.commerce12-subject-button:hover {
+  transform: translateX(4px);
+}
+
+/* =========================
+   INFO SECTION
+========================= */
+
+.commerce12-info-section {
+  max-width: 1150px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+}
+
+.commerce12-info-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.commerce12-info-heading span {
+  color: #059669;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.commerce12-info-heading h2 {
+  font-size: 32px;
+  margin: 8px 0;
+  color: #0f172a;
+}
+
+.commerce12-info-heading p {
+  color: #64748b;
+}
+
+.commerce12-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.commerce12-info-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+.commerce12-info-card > div {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.commerce12-info-card h3 {
+  margin: 0 0 8px;
+  color: #0f172a;
+}
+
+.commerce12-info-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================
+   NOTE
+========================= */
+
+.commerce12-note {
+  max-width: 1000px;
+  margin: 55px auto 0;
+  padding: 25px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 18px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.commerce12-note-icon {
+  font-size: 28px;
+}
+
+.commerce12-note h3 {
+  margin: 0 0 7px;
+  color: #065f46;
+}
+
+.commerce12-note p {
+  margin: 0;
+  color: #047857;
+  line-height: 1.6;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .commerce12-subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commerce12-resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .commerce12-header {
+    padding: 80px 18px 55px;
+  }
+
+  .commerce12-back {
+    top: 15px;
+    left: 15px;
+  }
+
+  .commerce12-header h1 {
+    font-size: 38px;
+  }
+
+  .commerce12-header p {
+    font-size: 15px;
+  }
+
+  .commerce12-subject-section {
+    padding: 0 15px;
+  }
+
+  .commerce12-section-heading h2 {
+    font-size: 28px;
+  }
+
+  .commerce12-subject-card {
+    min-height: 300px;
+    padding: 25px;
+  }
+
+  .commerce12-resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commerce12-note {
+    margin: 40px 15px 0;
+  }
+}

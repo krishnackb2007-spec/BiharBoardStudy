@@ -1,0 +1,572 @@
+/* =========================================
+   CLASS 12 SCIENCE PAGE
+========================================= */
+
+.science12-page {
+  min-height: 100vh;
+  background: #f7faff;
+  color: #172033;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.science12-header {
+  text-align: center;
+  padding: 42px 20px 35px;
+}
+
+
+.science12-back {
+  border: none;
+  background: transparent;
+
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-bottom: 22px;
+
+  transition: 0.25s ease;
+}
+
+
+.science12-back:hover {
+  transform: translateX(-5px);
+}
+
+
+.science12-badge {
+  display: inline-flex;
+
+  padding: 8px 15px;
+
+  border-radius: 50px;
+
+  background: #eaf3ff;
+
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.6px;
+
+  margin-bottom: 18px;
+}
+
+
+.science12-header h1 {
+  margin: 0;
+
+  font-size: clamp(36px, 5vw, 56px);
+
+  font-weight: 800;
+
+  line-height: 1.1;
+}
+
+
+.science12-header h1 span {
+  color: #2563eb;
+}
+
+
+.science12-header > p {
+  max-width: 680px;
+
+  margin: 17px auto 0;
+
+  color: #667085;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   SUBJECT SECTION
+========================================= */
+
+.science12-subject-section {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 25px 20px 55px;
+}
+
+
+.science12-section-heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+.science12-section-heading h2 {
+  margin: 0;
+
+  font-size: 30px;
+
+  font-weight: 800;
+}
+
+
+.science12-section-heading p {
+  margin: 8px 0 0;
+
+  color: #667085;
+}
+
+
+/* =========================================
+   SUBJECT GRID
+========================================= */
+
+.science12-subject-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   SUBJECT CARD
+========================================= */
+
+.science12-subject-card {
+  min-height: 280px;
+
+  padding: 28px;
+
+  border-radius: 24px;
+
+  border: 1px solid transparent;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.science12-subject-card:hover {
+  transform: translateY(-7px);
+}
+
+
+.science12-subject-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+
+/* =========================================
+   PHYSICS
+========================================= */
+
+.physics-card {
+  background: linear-gradient(
+    145deg,
+    #eef7ff,
+    #dcecff
+  );
+
+  border-color: #c9e1ff;
+}
+
+
+.physics-card:hover {
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.14);
+}
+
+
+/* =========================================
+   CHEMISTRY
+========================================= */
+
+.chemistry-card {
+  background: linear-gradient(
+    145deg,
+    #f1f8f2,
+    #e0f1e3
+  );
+
+  border-color: #c8e5cc;
+}
+
+
+.chemistry-card:hover {
+  box-shadow: 0 20px 40px rgba(22, 101, 52, 0.12);
+}
+
+
+/* =========================================
+   MATHEMATICS
+========================================= */
+
+.mathematics-card {
+  background: linear-gradient(
+    145deg,
+    #f4f0ff,
+    #e9e0ff
+  );
+
+  border-color: #ddd0ff;
+}
+
+
+.mathematics-card:hover {
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.13);
+}
+
+
+/* =========================================
+   BIOLOGY
+========================================= */
+
+.biology-card {
+  background: linear-gradient(
+    145deg,
+    #effbf5,
+    #ddf5e8
+  );
+
+  border-color: #c6e9d5;
+}
+
+
+.biology-card:hover {
+  box-shadow: 0 20px 40px rgba(5, 150, 105, 0.13);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.science12-subject-icon {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  font-size: 31px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.06);
+
+  margin-bottom: 23px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.science12-subject-content {
+  flex: 1;
+}
+
+
+.science12-subject-content span {
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  color: #667085;
+}
+
+
+.science12-subject-content h3 {
+  margin: 7px 0 10px;
+
+  font-size: 27px;
+
+  font-weight: 800;
+}
+
+
+.science12-subject-content p {
+  margin: 0;
+
+  max-width: 420px;
+
+  color: #667085;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.science12-arrow {
+  margin-top: 22px;
+
+  color: #2563eb;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+
+.science12-subject-card:hover .science12-arrow {
+  transform: translateX(6px);
+}
+
+
+/* =========================================
+   RESOURCE INFO
+========================================= */
+
+.science12-resource-info {
+  max-width: 1050px;
+
+  margin: 0 auto 45px;
+
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5eaf2;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 35px rgba(30, 60, 100, 0.06);
+}
+
+
+.science12-resource-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 24px;
+}
+
+
+.science12-resource-icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #eef5ff;
+
+  font-size: 26px;
+}
+
+
+.science12-resource-header h2 {
+  margin: 0;
+
+  font-size: 22px;
+}
+
+
+.science12-resource-header p {
+  margin: 5px 0 0;
+
+  color: #667085;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   RESOURCE GRID
+========================================= */
+
+.science12-resource-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+
+.science12-resource-card {
+  padding: 19px 12px;
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  background: #f8faff;
+
+  border: 1px solid #e6ebf3;
+
+  transition: 0.25s ease;
+}
+
+
+.science12-resource-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #bdd4f7;
+
+  box-shadow: 0 10px 24px rgba(30, 80, 150, 0.08);
+}
+
+
+.science12-resource-card strong {
+  display: block;
+
+  color: #2563eb;
+
+  font-size: 24px;
+
+  font-weight: 800;
+}
+
+
+.science12-resource-card span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #667085;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.science12-note {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 0 20px 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.science12-note > span {
+  font-size: 22px;
+}
+
+
+.science12-note p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 750px) {
+
+  .science12-subject-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .science12-resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .science12-header {
+    padding: 30px 16px 25px;
+  }
+
+  .science12-header h1 {
+    font-size: 38px;
+  }
+
+  .science12-header > p {
+    font-size: 14px;
+  }
+
+  .science12-subject-section {
+    padding: 20px 15px 45px;
+  }
+
+  .science12-section-heading h2 {
+    font-size: 25px;
+  }
+
+  .science12-subject-card {
+    min-height: 250px;
+
+    padding: 23px;
+
+    border-radius: 20px;
+  }
+
+  .science12-resource-info {
+    margin: 0 15px 40px;
+
+    padding: 21px;
+
+    border-radius: 20px;
+  }
+
+  .science12-resource-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .science12-resource-header {
+    align-items: flex-start;
+  }
+
+  .science12-resource-header h2 {
+    font-size: 19px;
+  }
+
+}

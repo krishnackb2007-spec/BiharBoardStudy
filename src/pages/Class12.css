@@ -1,0 +1,573 @@
+/* =========================================
+   CLASS 12 PAGE
+========================================= */
+
+.class12-page {
+  min-height: 100vh;
+  background: #f7faff;
+  color: #172033;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.class12-header {
+  text-align: center;
+  padding: 45px 20px 35px;
+}
+
+.class12-back {
+  display: inline-flex;
+  align-items: center;
+
+  border: none;
+  background: transparent;
+
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-bottom: 24px;
+
+  transition: 0.25s ease;
+}
+
+.class12-back:hover {
+  transform: translateX(-4px);
+  color: #1748b5;
+}
+
+
+.class12-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 15px;
+
+  border-radius: 50px;
+
+  background: #eaf2ff;
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 18px;
+}
+
+
+.class12-header h1 {
+  margin: 0;
+
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  color: #172033;
+}
+
+.class12-header h1 span {
+  color: #2563eb;
+}
+
+
+.class12-header p {
+  max-width: 650px;
+
+  margin: 18px auto 0;
+
+  color: #667085;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   STREAM SECTION
+========================================= */
+
+.streams-section {
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 25px 20px 60px;
+}
+
+
+.streams-heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.streams-heading h2 {
+  margin: 0;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  color: #172033;
+}
+
+.streams-heading p {
+  margin: 8px 0 0;
+
+  color: #667085;
+}
+
+
+/* =========================================
+   STREAM GRID
+========================================= */
+
+.streams-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================
+   STREAM CARD
+========================================= */
+
+.stream-card {
+  position: relative;
+
+  min-height: 300px;
+
+  padding: 30px;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  border: 1px solid transparent;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.stream-card:hover {
+  transform: translateY(-8px);
+}
+
+
+.stream-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+
+/* =========================================
+   SCIENCE
+========================================= */
+
+.science-card {
+  background: linear-gradient(
+    145deg,
+    #eef6ff,
+    #dcecff
+  );
+
+  border-color: #c9e0ff;
+}
+
+.science-card:hover {
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.15);
+}
+
+
+/* =========================================
+   COMMERCE
+========================================= */
+
+.commerce-card {
+  background: linear-gradient(
+    145deg,
+    #f4f0ff,
+    #e9e0ff
+  );
+
+  border-color: #ddd0ff;
+}
+
+.commerce-card:hover {
+  box-shadow: 0 20px 45px rgba(124, 58, 237, 0.15);
+}
+
+
+/* =========================================
+   ARTS
+========================================= */
+
+.arts-card {
+  background: linear-gradient(
+    145deg,
+    #fff5ed,
+    #ffe8d6
+  );
+
+  border-color: #ffd5b8;
+}
+
+.arts-card:hover {
+  box-shadow: 0 20px 45px rgba(234, 88, 12, 0.14);
+}
+
+
+/* =========================================
+   STREAM ICON
+========================================= */
+
+.stream-icon {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  font-size: 32px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.07);
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   STREAM CONTENT
+========================================= */
+
+.stream-content {
+  flex: 1;
+}
+
+
+.stream-label {
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color: #667085;
+}
+
+
+.stream-content h3 {
+  margin: 7px 0 10px;
+
+  font-size: 27px;
+
+  font-weight: 800;
+
+  color: #172033;
+}
+
+
+.stream-content p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.stream-arrow {
+  margin-top: 25px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #2563eb;
+
+  transition: 0.25s ease;
+}
+
+.stream-card:hover .stream-arrow {
+  transform: translateX(6px);
+}
+
+
+/* =========================================
+   RESOURCES SECTION
+========================================= */
+
+.class12-resources {
+  max-width: 1100px;
+
+  margin: 0 auto 55px;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5eaf2;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 35px rgba(30, 60, 100, 0.06);
+}
+
+
+.resources-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 25px;
+}
+
+
+.resources-heading > span {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: #eef5ff;
+
+  font-size: 27px;
+}
+
+
+.resources-heading h2 {
+  margin: 0;
+
+  font-size: 22px;
+
+  color: #172033;
+}
+
+
+.resources-heading p {
+  margin: 5px 0 0;
+
+  color: #667085;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   RESOURCE MINI CARDS
+========================================= */
+
+.resource-mini-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+.resource-mini-card {
+  padding: 20px 15px;
+
+  border-radius: 16px;
+
+  background: #f8faff;
+
+  border: 1px solid #e6ebf3;
+
+  text-align: center;
+
+  transition: 0.25s ease;
+}
+
+
+.resource-mini-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #bdd4f7;
+
+  box-shadow: 0 10px 25px rgba(30, 80, 150, 0.08);
+}
+
+
+.resource-mini-card strong {
+  display: block;
+
+  font-size: 24px;
+
+  color: #2563eb;
+
+  font-weight: 800;
+}
+
+
+.resource-mini-card span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #667085;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.class12-note {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 0 20px 60px;
+}
+
+
+.class12-note > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px 22px;
+
+  border-radius: 16px;
+
+  background: #fffbea;
+
+  border: 1px solid #f6e8a8;
+}
+
+
+.class12-note span {
+  font-size: 22px;
+}
+
+
+.class12-note p {
+  margin: 0;
+
+  color: #6b5b20;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .streams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stream-card {
+    min-height: 250px;
+  }
+
+  .resource-mini-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .class12-header {
+    padding: 30px 18px 25px;
+  }
+
+  .class12-header h1 {
+    font-size: 36px;
+  }
+
+  .class12-header p {
+    font-size: 14px;
+  }
+
+  .streams-section {
+    padding: 20px 15px 45px;
+  }
+
+  .streams-heading h2 {
+    font-size: 25px;
+  }
+
+  .stream-card {
+    padding: 24px;
+
+    min-height: 250px;
+
+    border-radius: 20px;
+  }
+
+  .class12-resources {
+    margin: 0 15px 40px;
+
+    padding: 22px;
+
+    border-radius: 20px;
+  }
+
+  .resources-heading {
+    align-items: flex-start;
+  }
+
+  .resources-heading h2 {
+    font-size: 19px;
+  }
+
+  .resource-mini-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .class12-note {
+    padding: 0 15px 40px;
+  }
+
+}
