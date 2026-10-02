@@ -1,11 +1,14 @@
 import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/useAuth";
 import "./NavbarUser.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
+
   const dropdownRef = useRef(null);
+  const navigate = useNavigate();
 
   const { user, openAuthModal, logout } = useAuth();
 
@@ -26,8 +29,9 @@ function Navbar() {
 
     document.addEventListener("mousedown", handleClickOutside);
 
-    return () =>
+    return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   // Display name
@@ -51,6 +55,13 @@ function Navbar() {
     ? "Mobile OTP"
     : "Email Account";
 
+  // Open admin using React Router
+  const openAdmin = () => {
+    closeMenu();
+    setProfileOpen(false);
+    navigate("/admin");
+  };
+
   return (
     <header className="navbar">
       <div className="navbar-container">
@@ -65,7 +76,7 @@ function Navbar() {
         >
           <div className="brand-logo-wrapper">
             <img
-              src="/logo.png"
+              src="/BiharBoardStudy/logo.png"
               alt="BiharBoardStudy Logo"
               className="brand-logo"
               onError={(event) => {
@@ -122,10 +133,6 @@ function Navbar() {
             Class 12
           </a>
 
-          {/* 
-            PYQ / NOTES / ABOUT REMOVED
-          */}
-
           {/* =========================
               MOBILE AUTH
           ========================== */}
@@ -165,6 +172,7 @@ function Navbar() {
                   }}
                 >
 
+                  {/* ADMIN DASHBOARD */}
                   <button
                     type="button"
                     className="auth-submit-btn"
@@ -174,14 +182,12 @@ function Navbar() {
                       padding: "8px 16px",
                       width: "100%",
                     }}
-                    onClick={() => {
-                      closeMenu();
-                      window.location.href = "/admin";
-                    }}
+                    onClick={openAdmin}
                   >
                     Go to Dashboard
                   </button>
 
+                  {/* LOGOUT */}
                   <button
                     type="button"
                     className="auth-submit-btn"
@@ -300,6 +306,7 @@ function Navbar() {
 
                 <div className="user-dropdown-actions">
 
+                  {/* ADMIN DASHBOARD */}
                   <button
                     className="user-dropdown-item"
                     type="button"
@@ -307,15 +314,13 @@ function Navbar() {
                       color: "#3b82f6",
                       marginBottom: "4px",
                     }}
-                    onClick={() => {
-                      setProfileOpen(false);
-                      window.location.href = "/admin";
-                    }}
+                    onClick={openAdmin}
                   >
                     <span>📊</span>
                     <span>Admin Dashboard</span>
                   </button>
 
+                  {/* SIGN OUT */}
                   <button
                     className="user-dropdown-item"
                     type="button"

@@ -20,18 +20,19 @@ import Class12 from "./pages/Class12";
 import Science12 from "./pages/Science12";
 import Class12Subject from "./pages/Class12Subject";
 import Class12Resource from "./pages/Class12Resource";
+
 import Arts12 from "./pages/Arts12";
 import Arts12Subject from "./pages/Arts12Subject";
+
 import Commerce12 from "./pages/Commerce12";
 import Commerce12Subject from "./pages/Commerce12Subject";
+
 import Subject from "./pages/Subject";
 import Resource from "./pages/Resource";
 import AuthPage from "./pages/AuthPage";
 
 import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
-
-
 
 /* =====================================================
    SCROLL TO TOP ON EVERY PAGE
@@ -51,7 +52,6 @@ function ScrollToTop() {
   return null;
 }
 
-
 /* =====================================================
    UNIVERSAL PAGE NAVIGATION
 ===================================================== */
@@ -60,22 +60,18 @@ function UniversalNavigation() {
   const navigate = useNavigate();
 
   useEffect(() => {
-
     const handleNavigation = (event) => {
-
       const element = event.target.closest(
         "a, button, [data-page]"
       );
 
       if (!element) return;
 
-
       /* ================= LINKS ================= */
 
       const href = element.getAttribute("href");
 
       if (href) {
-
         const linkMap = {
           "#home": "/",
           "#class10": "/class-10",
@@ -84,33 +80,24 @@ function UniversalNavigation() {
           "#notes": "/notes",
           "#about": "/about",
           "#login": "/login",
-          "#signup": "/signup",
         };
 
         if (linkMap[href]) {
-
           event.preventDefault();
-
           navigate(linkMap[href]);
-
           return;
         }
       }
-
 
       /* ================= DATA PAGE ================= */
 
       const dataPage = element.getAttribute("data-page");
 
       if (dataPage) {
-
         event.preventDefault();
-
         navigate(dataPage);
-
         return;
       }
-
 
       /* ================= CLASS 10 ================= */
 
@@ -121,14 +108,10 @@ function UniversalNavigation() {
         text?.includes("class 10 →") ||
         text?.includes("class 10 >")
       ) {
-
         event.preventDefault();
-
         navigate("/class-10");
-
         return;
       }
-
 
       /* ================= CLASS 12 ================= */
 
@@ -137,54 +120,37 @@ function UniversalNavigation() {
         text?.includes("class 12 →") ||
         text?.includes("class 12 >")
       ) {
-
         event.preventDefault();
-
         navigate("/class-12");
-
         return;
       }
-
     };
 
-
-    document.addEventListener(
-      "click",
-      handleNavigation
-    );
-
+    document.addEventListener("click", handleNavigation);
 
     return () => {
-
       document.removeEventListener(
         "click",
         handleNavigation
       );
-
     };
-
   }, [navigate]);
-
 
   return null;
 }
-
 
 /* =====================================================
    APP CONTENT
 ===================================================== */
 
 function AppContent() {
-
   const location = useLocation();
 
   const isAdminRoute =
     location.pathname.startsWith("/admin");
 
-
   return (
     <>
-
       {/* ================= GLOBAL NAVIGATION ================= */}
 
       {!isAdminRoute && (
@@ -199,19 +165,15 @@ function AppContent() {
         </>
       )}
 
-
       {/* ================= ALL PAGES ================= */}
 
       <Routes>
-
-
         {/* ================= HOME ================= */}
 
         <Route
           path="/"
           element={<Home />}
         />
-
 
         {/* ================= CLASS 10 ================= */}
 
@@ -220,14 +182,12 @@ function AppContent() {
           element={<Class10 />}
         />
 
-
         {/* ================= CLASS 10 SUBJECT ================= */}
 
         <Route
           path="/class-10/:subject"
           element={<Subject />}
         />
-
 
         {/* ================= CLASS 10 RESOURCE ================= */}
 
@@ -236,68 +196,81 @@ function AppContent() {
           element={<Resource />}
         />
 
-
-        {/* ================= CLASS 12 ================= */}
+        {/* =================================================
+            CLASS 12
+        ================================================= */}
 
         <Route
           path="/class-12"
           element={<Class12 />}
         />
+
+        {/* ================= CLASS 12 SCIENCE ================= */}
+
         <Route
-  path="/class-12/science"
-  element={<Science12 />}
-/>
-{/* ================= CLASS 12 ================= */}
+          path="/class-12/science"
+          element={<Science12 />}
+        />
 
-<Route
-  path="/class-12"
-  element={<Class12 />}
-/>
+        {/* ================= CLASS 12 SCIENCE SUBJECT ================= */}
 
-{/* ================= CLASS 12 SCIENCE ================= */}
+        <Route
+          path="/class-12/science/:subject"
+          element={<Class12Subject />}
+        />
 
-<Route
-  path="/class-12/science"
-  element={<Science12 />}
-/>
+        {/* ================= CLASS 12 SCIENCE RESOURCE ================= */}
 
-{/* ================= CLASS 12 SCIENCE SUBJECT ================= */}
+        <Route
+          path="/class-12/science/:subject/:type"
+          element={<Class12Resource />}
+        />
 
-<Route
-  path="/class-12/science/:subject"
-  element={<Class12Subject />}
-/>
-<Route
-  path="/class-12/science/:subject/:type"
-  element={<Class12Resource />}
-/>
-<Route
-  path="/class-12/arts"
-  element={<Arts12 />}
-/>
+        {/* ================= CLASS 12 ARTS ================= */}
 
-<Route
-  path="/class-12/arts/:subject"
-  element={<Arts12Subject />}
-/>
+        <Route
+          path="/class-12/arts"
+          element={<Arts12 />}
+        />
 
-<Route
-  path="/class-12/arts/:subject/:type"
-  element={<Class12Resource />}
-/>
-<Route path="/class-12/commerce" element={<Commerce12 />} />
+        {/* ================= CLASS 12 ARTS SUBJECT ================= */}
 
-<Route
-  path="/class-12/commerce/:subject"
-  element={<Commerce12Subject />}
-/>
+        <Route
+          path="/class-12/arts/:subject"
+          element={<Arts12Subject />}
+        />
 
-<Route
-  path="/class-12/commerce/:subject/:type"
-  element={<Class12Resource />}
-/>
+        {/* ================= CLASS 12 ARTS RESOURCE ================= */}
 
-        {/* ================= AUTHENTICATION ================= */}
+        <Route
+          path="/class-12/arts/:subject/:type"
+          element={<Class12Resource />}
+        />
+
+        {/* ================= CLASS 12 COMMERCE ================= */}
+
+        <Route
+          path="/class-12/commerce"
+          element={<Commerce12 />}
+        />
+
+        {/* ================= CLASS 12 COMMERCE SUBJECT ================= */}
+
+        <Route
+          path="/class-12/commerce/:subject"
+          element={<Commerce12Subject />}
+        />
+
+        {/* ================= CLASS 12 COMMERCE RESOURCE ================= */}
+
+        <Route
+          path="/class-12/commerce/:subject/:type"
+          element={<Class12Resource />}
+        />
+
+        {/* =================================================
+            AUTHENTICATION
+        ================================================= */}
 
         <Route
           path="/login"
@@ -309,18 +282,9 @@ function AppContent() {
           }
         />
 
-        <Route
-          path="/signup"
-          element={
-            <AuthPage
-              key="signup"
-              initialMode="signup"
-            />
-          }
-        />
-
-
-        {/* ================= ADMIN DASHBOARD ================= */}
+        {/* =================================================
+            ADMIN DASHBOARD
+        ================================================= */}
 
         <Route
           path="/admin/*"
@@ -331,8 +295,9 @@ function AppContent() {
           }
         />
 
-
-        {/* ================= FUTURE PYQ PAGE ================= */}
+        {/* =================================================
+            FUTURE PYQ PAGE
+        ================================================= */}
 
         <Route
           path="/pyq"
@@ -354,8 +319,9 @@ function AppContent() {
           }
         />
 
-
-        {/* ================= FUTURE NOTES PAGE ================= */}
+        {/* =================================================
+            FUTURE NOTES PAGE
+        ================================================= */}
 
         <Route
           path="/notes"
@@ -377,8 +343,9 @@ function AppContent() {
           }
         />
 
-
-        {/* ================= ABOUT PAGE ================= */}
+        {/* =================================================
+            ABOUT PAGE
+        ================================================= */}
 
         <Route
           path="/about"
@@ -400,33 +367,54 @@ function AppContent() {
           }
         />
 
-      </Routes>
+        {/* =================================================
+            404 PAGE
+        ================================================= */}
 
+        <Route
+          path="*"
+          element={
+            <div
+              style={{
+                minHeight: "70vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                textAlign: "center",
+                padding: "40px",
+              }}
+            >
+              <h1>404</h1>
+
+              <h2>
+                Page Not Found
+              </h2>
+
+              <p>
+                The page you are looking for does not exist.
+              </p>
+            </div>
+          }
+        />
+      </Routes>
     </>
   );
 }
-
 
 /* =====================================================
    APP
 ===================================================== */
 
 function App() {
-
   return (
-
     <BrowserRouter>
 
       <AuthProvider>
-
         <AppContent />
-
       </AuthProvider>
-
     </BrowserRouter>
-
   );
 }
-
 
 export default App;

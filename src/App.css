@@ -3335,3 +3335,667 @@ img {
     min-width: 0 !important;
   }
 }
+/* =========================================================
+   BIHARBOARDSTUDY - FINAL MOBILE RESPONSIVE FIX
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+.home-page {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+  /* ---------- HERO ---------- */
+
+  .hero-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    overflow: hidden !important;
+  }
+
+  .hero-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 18px !important;
+  }
+
+  .hero-left {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .hero-left h1 {
+    max-width: 100% !important;
+    font-size: 34px !important;
+    line-height: 1.15 !important;
+  }
+
+  .hero-description {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+
+
+  /* ---------- CHOOSE YOUR CLASS ---------- */
+
+  .classes-section {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 35px auto 0 !important;
+    padding: 0 16px 55px !important;
+
+    text-align: center !important;
+  }
+
+  .classes-section .section-heading {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto 25px !important;
+  }
+
+  .classes-section .section-heading h2 {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+
+  .classes-section .section-heading p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+
+  /* ---------- CLASS CARDS CONTAINER ---------- */
+
+  .classes-section .class-cards {
+    display: flex !important;
+    flex-direction: column !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    gap: 24px !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+
+  /* ---------- CLASS 10 / CLASS 12 CARD ---------- */
+
+  .classes-section .class-card {
+    width: 100% !important;
+    max-width: 340px !important;
+    min-width: 0 !important;
+
+    flex: 0 1 auto !important;
+
+    min-height: 360px !important;
+
+    margin: 0 auto !important;
+    padding: 30px 22px !important;
+
+    border-radius: 28px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    text-align: center !important;
+
+    overflow: hidden !important;
+  }
+
+
+  /* ---------- CLASS ICON ---------- */
+
+  .classes-section .class-card .class-icon {
+    width: 100% !important;
+    max-width: 270px !important;
+    height: 125px !important;
+
+    margin: 0 auto 30px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 70px !important;
+  }
+
+
+  /* ---------- CLASS TITLE ---------- */
+
+  .classes-section .class-card h3 {
+    width: 100% !important;
+
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+
+    margin: 0 0 12px !important;
+  }
+
+
+  /* ---------- CLASS DESCRIPTION ---------- */
+
+  .classes-section .class-card p {
+    width: 100% !important;
+
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+
+    margin: 0 0 28px !important;
+  }
+
+
+  /* ---------- BUTTON ---------- */
+
+  .classes-section .class-button {
+    width: 100% !important;
+    max-width: 270px !important;
+
+    min-width: 0 !important;
+    height: 54px !important;
+
+    padding: 0 18px !important;
+
+    border-radius: 14px !important;
+
+    font-size: 17px !important;
+    line-height: 1.2 !important;
+
+    white-space: normal !important;
+
+    margin: auto auto 0 !important;
+  }
+
+
+  /* =====================================================
+     POPULAR SUBJECTS
+     ===================================================== */
+
+  .subjects-section {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    padding: 45px 16px !important;
+
+    overflow: hidden !important;
+  }
+
+  .section-title-row {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+    gap: 15px !important;
+  }
+
+  .section-title-row > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .section-title-row h2 {
+    width: 100% !important;
+
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+
+    margin: 0 !important;
+  }
+
+  .section-title-row p {
+    width: 100% !important;
+
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+
+    margin: 10px 0 0 !important;
+  }
+
+  .view-all-button {
+    white-space: nowrap !important;
+  }
+
+
+  /* ---------- SUBJECT GRID ---------- */
+
+  .subjects-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    gap: 18px !important;
+
+    margin: 25px auto 0 !important;
+  }
+
+
+  /* ---------- SUBJECT CARD ---------- */
+
+  .subjects-grid .subject-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 30px 22px !important;
+
+    min-height: 220px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    overflow: hidden !important;
+  }
+
+  .subjects-grid .subject-card h3 {
+    font-size: 23px !important;
+    line-height: 1.25 !important;
+  }
+
+  .subjects-grid .subject-card span {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 380px) {
+
+  .classes-section,
+  .subjects-section {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .classes-section .class-card {
+    max-width: 100% !important;
+    padding: 26px 18px !important;
+  }
+
+  .classes-section .class-card h3 {
+    font-size: 25px !important;
+  }
+
+  .classes-section .class-button {
+    max-width: 100% !important;
+  }
+
+  .section-title-row h2 {
+    font-size: 27px !important;
+  }
+}
+/* =====================================================
+   FINAL MOBILE CLASS CARD PROPORTION FIX
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+  .classes-section .class-cards {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    gap: 14px !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+
+    padding: 0 4px !important;
+  }
+
+  /* CLASS 10 + CLASS 12 */
+  .classes-section .class-card {
+    width: calc(50% - 7px) !important;
+    max-width: 300px !important;
+    min-width: 0 !important;
+
+    flex: 1 1 0 !important;
+
+    height: 470px !important;
+    min-height: 470px !important;
+
+    padding: 24px 16px !important;
+
+    border-radius: 28px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* ICON */
+  .classes-section .class-card .class-icon {
+    width: 100% !important;
+    height: 125px !important;
+
+    margin-bottom: 25px !important;
+
+    font-size: 62px !important;
+  }
+
+  /* TITLE */
+  .classes-section .class-card h3 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+
+    margin: 0 0 12px !important;
+  }
+
+  /* DESCRIPTION */
+  .classes-section .class-card p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+
+    margin: 0 0 20px !important;
+  }
+
+  /* BUTTON */
+  .classes-section .class-button {
+    width: 100% !important;
+    max-width: 155px !important;
+
+    height: 50px !important;
+
+    margin-top: auto !important;
+
+    font-size: 14px !important;
+
+    border-radius: 14px !important;
+  }
+}
+/* MOBILE - MINIMUM GAP */
+
+@media (max-width: 700px) {
+  .hero-section {
+    min-height: auto !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .classes-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .hero-left {
+    margin-bottom: 0 !important;
+  }
+}
+/* =====================================================
+   FINAL MOBILE CLASS CARD PROPORTION FIX
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+  .classes-section .class-cards {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    gap: 14px !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+
+    padding: 0 4px !important;
+  }
+
+  /* CLASS 10 + CLASS 12 */
+  .classes-section .class-card {
+    width: calc(50% - 7px) !important;
+    max-width: 300px !important;
+    min-width: 0 !important;
+
+    flex: 1 1 0 !important;
+
+    height: 470px !important;
+    min-height: 470px !important;
+
+    padding: 24px 16px !important;
+
+    border-radius: 28px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* ICON */
+  .classes-section .class-card .class-icon {
+    width: 100% !important;
+    height: 125px !important;
+
+    margin-bottom: 25px !important;
+
+    font-size: 62px !important;
+  }
+
+  /* TITLE */
+  .classes-section .class-card h3 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+
+    margin: 0 0 12px !important;
+  }
+
+  /* DESCRIPTION */
+  .classes-section .class-card p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+
+    margin: 0 0 20px !important;
+  }
+
+  /* BUTTON */
+  .classes-section .class-button {
+    width: 100% !important;
+    max-width: 155px !important;
+
+    height: 50px !important;
+
+    margin-top: auto !important;
+
+    font-size: 14px !important;
+
+    border-radius: 14px !important;
+  }
+}
+/* =====================================================
+   MOBILE HOME - CLASS 10 ABOVE CLASS 12
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+  /* Hero ka extra blank space remove */
+  body .home-page .hero-section {
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+
+    overflow: visible !important;
+  }
+
+  body .home-page .hero-container {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Choose Your Class normal position */
+  body .home-page .classes-section {
+    position: relative !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    transform: none !important;
+
+    width: 100% !important;
+
+    margin-top: 10px !important;
+    padding: 0 16px 40px !important;
+  }
+
+  /* Class 10 → Class 12 vertical */
+  body .home-page .classes-section .class-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+
+    width: 100% !important;
+
+    gap: 20px !important;
+
+    align-items: center !important;
+  }
+
+  /* Individual cards */
+  body .home-page .classes-section .class-card {
+    width: 100% !important;
+    max-width: 360px !important;
+    min-width: 0 !important;
+
+    flex: none !important;
+
+    height: 330px !important;
+    min-height: 330px !important;
+
+    margin: 0 auto !important;
+
+    padding: 24px 18px !important;
+  }
+
+  /* Icon */
+  body .home-page .classes-section .class-card .class-icon {
+    height: 105px !important;
+    margin-bottom: 20px !important;
+
+    font-size: 60px !important;
+  }
+
+  /* Title */
+  body .home-page .classes-section .class-card h3 {
+    font-size: 25px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* Description */
+  body .home-page .classes-section .class-card p {
+    font-size: 14px !important;
+    margin-bottom: 18px !important;
+  }
+
+  /* Button */
+  body .home-page .classes-section .class-button {
+    width: 100% !important;
+    max-width: 180px !important;
+    height: 48px !important;
+
+    margin-top: auto !important;
+
+    font-size: 14px !important;
+  }
+}
+/* ===== FINAL MOBILE CLASS LAYOUT ===== */
+@media (max-width: 768px) {
+
+  /* Choose Your Class section */
+  .classes-section {
+    position: relative !important;
+    display: block !important;
+    margin-top: 10px !important;
+    padding: 0 16px 40px !important;
+    width: 100% !important;
+  }
+
+  /* Class cards vertical */
+  .class-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  /* Class 10 + Class 12 */
+  .class-card {
+    width: 100% !important;
+    max-width: 360px !important;
+    min-height: 330px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  /* Force order */
+  .class-card.class-ten {
+    order: 1 !important;
+  }
+
+  .class-card.class-twelve {
+    order: 2 !important;
+  }
+
+  /* Heading */
+  .section-heading {
+    margin-bottom: 22px !important;
+    text-align: center !important;
+  }
+
+}
